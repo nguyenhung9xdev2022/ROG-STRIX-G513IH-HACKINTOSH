@@ -16,3 +16,10 @@ Hackintosh for ASUS ROG STRIX G513 (G513IH) 2021.
 | Touchpad                   | I2C HID               |
 | Audio/3.5mm Headphone Jack | ALC256                |
 | Memory                     | DDR4 3200MHz 16G      |
+
+## Description
+- The available versions for this EFI are BigSur
+- The model information has been deleted, please generate and replace it by yourself
+- OpenCore version: 0.9.3
+- It is recommended to use [UMAF](https://github.com/DavidS95/Smokeless_UMAF/) tool to increase vram, at least 1G is recommended 2G.
+- This EFI was made based on the 2021 model, but it should be compatible with the 2022 model
