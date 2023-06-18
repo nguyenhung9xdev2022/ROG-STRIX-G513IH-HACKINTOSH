@@ -24,6 +24,11 @@ Hackintosh for ASUS ROG STRIX G513 (G513IH) 2021.
 - It is recommended to use [UMAF](https://github.com/DavidS95/Smokeless_UMAF/) tool to increase vram, at least 1G is recommended 2G.
 - This EFI was made based on the 2021 model, but it should be compatible with the 2022 model
 
+## Warning
+
+- When installing or updating the system, pay attention to disable the `NootedRed` driver in `config.plist`, otherwise the installation process will get stuck in the progress bar and cannot be installed normally
+- When installing or updating the system, please disable the `USBMap` driver in `config.plist` or customize it yourself
+  
 ### Current status
 
 - CPU
