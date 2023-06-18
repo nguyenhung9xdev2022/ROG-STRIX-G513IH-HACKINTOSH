@@ -48,6 +48,8 @@ Hackintosh for ASUS ROG STRIX G513 (G513IH) 2021.
 
 - Volume shortcut keys
 
+- LAN
+
 ### Not Working
 
 - Unable to wake up after a long period of sleep
@@ -59,6 +61,44 @@ Hackintosh for ASUS ROG STRIX G513 (G513IH) 2021.
 - Keyboard backlight control, Fn shortcut keys (the driver did not work properly)
 
 - VCN (Video/Picture Hardware Encoding and Decoding) still has problems, can be used but not guaranteed, turned off by default, to enable, please add `-nredvcn` to `boot-args`, please move to NootedRed page for the latest progress
+
+## Know Your EFI
+
+### ACPI
+
+| SSDT          | Function                                                     |
+| :------------ | :----------------------------------------------------------- |
+| SSDT-PLUG-ALT | Used for MacOS to recognize CPU, must-have                   |
+| SSDT-EC       | Fakes a EC for MacOS, must-have                              |
+| SSDT-HPET     | Solves IRQ conflicts, must-have                              |
+| SSDT-USBX     | USB power management, must-have                              |
+| SSDT-XOSI     | ACPI function of MAC and WIN, dual systems must-have.        |
+| SSDT-ALS0     | Provided by NootedRed, used for screen brightness adjustment |
+| SSDT-PNLF     | Provided by NootedRed, used for screen brightness adjustment |
+
+### Kexts
+
+| Kext                       | Function                                                     |
+| :------------------------- | :----------------------------------------------------------- |
+| AMDRyzenCPUPowerManagement | AMD CPU power management                                     |
+| AppleALC                   | Audio driver                                                 |
+| AppleMCEReporterDisabler   | Disables AppleIntelMCEReporter to avoid errors on AMD CPU devices |
+| Lilu                       | Must-have                                                    |
+| NVMeFix                    | NVMe hard disk power management                              |
+| RestrictEvents             | CPU renamer                                                  |
+| SMCAMDProcessor            | Subsidiary of AMDRyzenCPUPowerManagement                     |
+| SMCBatteryManager          | Battery management                                           |
+| SMCLightSensor             | Used for ambient light sensors on laptops                    |
+| USBToolBox                 | USB customization                                            |
+| USBMap                     | USB customization, not universal, need to customize by yourself |
+| VirtualSMC                 | Must-have                                                    |
+| VoodooI2C                  | Touchpad or touchscreen driver                               |
+| VoodooI2CHID               | Touchpad or touchscreen driver                               |
+| AirportItlwm               | Intel network card driver, note that different systems have different kexts |
+| IntelBluetoothFirmware     | Bluetooth driver                                             |
+| IntelBluetoothInjector     | Bluetooth driver                                             |
+| IntelBTPatcher             | Bluetooth driver                                             |
+| AmdTscSync                 | CPU frequency synchronization, in conjunction with kernel patches, to control power consumption |
 
 ## Credit
 
