@@ -23,3 +23,13 @@ Hackintosh for ASUS ROG STRIX G513 (G513IH) 2021.
 - OpenCore version: 0.9.3
 - It is recommended to use [UMAF](https://github.com/DavidS95/Smokeless_UMAF/) tool to increase vram, at least 1G is recommended 2G.
 - This EFI was made based on the 2021 model, but it should be compatible with the 2022 model
+
+## Credit
+
+https://github.com/NootInc/NootedRed
+
+https://github.com/zabdottler/Lenovo-Yoga-16S-hackintosh
+
+https://github.com/AlphaNecron/Zephyrus-G14-GA401QH-EFI
+
+https://github.com/b00t0x/ROG-Zephyrus-G14-GA402-Hackintosh
