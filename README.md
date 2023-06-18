@@ -24,6 +24,42 @@ Hackintosh for ASUS ROG STRIX G513 (G513IH) 2021.
 - It is recommended to use [UMAF](https://github.com/DavidS95/Smokeless_UMAF/) tool to increase vram, at least 1G is recommended 2G.
 - This EFI was made based on the 2021 model, but it should be compatible with the 2022 model
 
+### Current status
+
+- CPU
+
+  - Energy management is done using [AMD Power Gadget](https://github.com/trulyspinach/SMCAMDProcessor)
+
+- IGPU
+
+  - Hardware acceleration has some issues, waiting for updated driver from [NootedRed](https://github.com/NootInc/NootedRed)
+
+- WiFi/Bluetooth
+
+- Apple ID & iMessages & iCloud
+
+- Touchpad and keyboard
+
+- 3.5mm headphone audio output
+
+- NVME SSD
+
+- Metal acceleration
+
+- Volume shortcut keys
+
+### Not Working
+
+- Unable to wake up after a long period of sleep
+
+- NVIDIA dGPU
+
+- Third-party browsers cannot use hardware acceleration normally (Edge)
+
+- Keyboard backlight control, Fn shortcut keys (the driver did not work properly)
+
+- VCN (Video/Picture Hardware Encoding and Decoding) still has problems, can be used but not guaranteed, turned off by default, to enable, please add `-nredvcn` to `boot-args`, please move to NootedRed page for the latest progress
+
 ## Credit
 
 https://github.com/NootInc/NootedRed
